@@ -100,7 +100,3 @@ Where the user resides (i.e. the state or province).
 {% docs bingeflix_user_country %}
 Where the user resides.
 {% enddocs %}
-
-
-
-
