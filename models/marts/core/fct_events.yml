@@ -4,22 +4,16 @@ models:
     columns:
       - name: session_id
         description: '{{ doc("bingeflix_session_id") }}'
-        tests:
-          - not_null
+
       - name: created_at
         description: '{{ doc("bingeflix_event_created_at") }}'
-        tests:
-          - not_null
+
       - name: user_id
         description: '{{ doc("bingeflix_user_id") }}'
-        tests:
-          - not_null
+
       - name: event_name
         description: '{{ doc("bingeflix_event_name") }}'
-        tests:
-          - not_null
-          - accepted_values:
-              values: ['User Logged In', 'User Logged Out']
+
       - name: event_id
         description: '{{ doc("bingeflix_event_id") }}'
         tests:

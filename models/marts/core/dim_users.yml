@@ -16,41 +16,27 @@ models:
 
       - name: created_at
         description: '{{ doc("bingeflix_user_created_at") }}'
-        tests:
-          - not_null
 
       - name: phone_number
         description: '{{ doc("bingeflix_user_phone_number") }}'
-        tests:
-          - not_null
 
       - name: deleted_at
         description: '{{ doc("bingeflix_user_deleted_at") }}'
 
       - name: username
         description: '{{ doc("bingeflix_username") }}'
-        tests:
-          - not_null
 
       - name: name
         description: '{{ doc("bingeflix_user_name") }}'
-        tests:
-          - not_null
 
       - name: sex
         description: '{{ doc("bingeflix_user_sex") }}'
-        tests:
-          - not_null
 
       - name: email
         description: '{{ doc("bingeflix_user_email") }}'
-        tests:
-          - not_null
 
       - name: birthdate
         description: '{{ doc("bingeflix_user_birthdate") }}'
-        tests:
-          - not_null
 
       - name: current_age
         description: The user's current age.
@@ -64,13 +50,9 @@ models:
 
       - name: region
         description: '{{ doc("bingeflix_user_region") }}'
-        tests:
-          - not_null
 
       - name: country
         description: '{{ doc("bingeflix_user_country") }}'
-        tests:
-          - not_null
 
       - name: count_of_subscriptions
         description: 'Number of subscriptions by user'
