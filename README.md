@@ -114,11 +114,11 @@ Awesome! You are now ready to start the course! 🚀🚀🚀
 
 #### Models
 
-## Staging
+##### Staging
 - The primary key column must have not_null and unique schema tests.
 - No other assertion tests are required at the staging level since transformations are only limited to (i) renaming, (ii) type casting, and (iii) basic computations.
 
-## Marts
+##### Marts
 
 - When a dim/fact has only one source, there is no need to perform assertion tests on columns that are not affected in the transformation, with the exception of the primary key columns which have ‘not_null’ and unique test.
 
