@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='event_id'
+    )
+}}
+
 WITH source AS (
 
     SELECT * FROM {{ source('bingeflix', 'events') }}
@@ -14,6 +21,12 @@ renamed AS (
         event_id
 
     FROM source
+
+{% if is_incremental() %}
+
+  {{ incremental_where_clause(column_name = 'created_at', lookback_window = -3, periods = 'day') }}
+
+{% endif %}
 
 )
 
